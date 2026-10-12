@@ -1,17 +1,178 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      <ion-icon name="book"></ion-icon>  Jadwal Kuliah
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-accordion-group>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+    <!-- SENIN -->
+    <ion-accordion value="senin">
+      <ion-item slot="header" color="light">
+        <ion-label>Senin</ion-label>
+      </ion-item>
+
+      <div class="ion-padding" slot="content">
+
+        <ion-card color="danger">
+          <ion-card-header>
+            <ion-card-title>Pendidikan Agama Islam</ion-card-title>
+            <ion-card-subtitle>09.00 - 11.00</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-text>Dosen: Agus Kurniawan, S.T., M.T., Ph.D.</ion-text>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card color="danger">
+          <ion-card-header>
+            <ion-card-title>Pancasila</ion-card-title>
+            <ion-card-subtitle>11.15 - 12.55</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-text>Dosen: Sri Yulita Pramulia Panani, S.Fil., M.Phil.</ion-text>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card color="danger">
+          <ion-card-header>
+            <ion-card-title>Kewarganegaraan</ion-card-title>
+            <ion-card-subtitle>13.00 - 14.40</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-text>Dosen: Dr. Drs. Mustofa Anshori Lidinillah, M.Hum.</ion-text>
+          </ion-card-content>
+        </ion-card>
+
+      </div>
+    </ion-accordion>
+
+    <!-- SELASA -->
+    <ion-accordion value="selasa">
+      <ion-item slot="header" color="light">
+        <ion-label>Selasa</ion-label>
+      </ion-item>
+
+      <div class="ion-padding" slot="content">
+
+        <ion-card color="warning">
+          <ion-card-header>
+            <ion-card-title>Praktikum Pemrograman Geospasial: Perangkat Bergerak Lanjut</ion-card-title>
+            <ion-card-subtitle>11.00 - 13.00</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-text>Dosen: Karen Slamet Hardjo, S.Si., M.Sc.</ion-text>
+          </ion-card-content>
+        </ion-card>
+
+      </div>
+    </ion-accordion>
+
+    <!-- RABU -->
+    <ion-accordion value="rabu">
+      <ion-item slot="header" color="light">
+        <ion-label>Rabu</ion-label>
+      </ion-item>
+
+      <div class="ion-padding" slot="content">
+
+        <ion-card color="success">
+          <ion-card-header>
+            <ion-card-title>Ide Kreatif dan Kewirausahaan</ion-card-title>
+            <ion-card-subtitle>11.10 - 12.50</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-text>Dosen: Dr. Barandi Sapta Widartono, S.Si., M.Si., M.Sc.</ion-text>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card color="success">
+          <ion-card-header>
+            <ion-card-title>Praktikum Sains Data Geospasial Lanjut</ion-card-title>
+            <ion-card-subtitle>13.00 - 15.00</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-text>
+              Dosen: Karen Slamet Hardjo, S.Si., M.Sc.<br>
+              Rendy Putra Maretika, S.Si., M.Sc.<br>
+              Ade Febri Sandhini Putri, S.Si., M.Sc.
+            </ion-text>
+          </ion-card-content>
+        </ion-card>
+
+      </div>
+    </ion-accordion>
+
+    <!-- KAMIS -->
+    <ion-accordion value="kamis">
+      <ion-item slot="header" color="light">
+        <ion-label>Kamis</ion-label>
+      </ion-item>
+
+      <div class="ion-padding" slot="content">
+
+        <ion-card color="tertiary">
+          <ion-card-header>
+            <ion-card-title>Metodologi Penelitian</ion-card-title>
+            <ion-card-subtitle>11.10 - 12.50</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-text>
+              Dosen: Dr. Like Indrawati, S.Si., M.Sc.<br>
+              Dr. Nur Mohammad Farda, S.Si., M.Cs.
+            </ion-text>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card color="tertiary">
+          <ion-card-header>
+            <ion-card-title>Praktikum Aplikasi SIG untuk Pemetaan Pesisir dan Kelautan</ion-card-title>
+            <ion-card-subtitle>13.00 - 15.00</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-text>Dosen: Dr. Like Indrawati, S.Si., M.Sc.</ion-text>
+          </ion-card-content>
+        </ion-card>
+
+      </div>
+    </ion-accordion>
+
+    <!-- JUMAT -->
+    <ion-accordion value="jumat">
+      <ion-item slot="header" color="light">
+        <ion-label>Jumat</ion-label>
+      </ion-item>
+
+      <div class="ion-padding" slot="content">
+
+        <ion-card color="secondary">
+          <ion-card-header>
+            <ion-card-title>Bahasa Indonesia</ion-card-title>
+            <ion-card-subtitle>07.15 - 08.55</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-text>Dosen: Zulisih Maryani, S.S., M.A.</ion-text>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card color="secondary">
+          <ion-card-header>
+            <ion-card-title>Praktikum Aplikasi SIG untuk Sumber Daya Air</ion-card-title>
+            <ion-card-subtitle>13.00 - 15.00</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-text>
+              Dosen: Dr. Like Indrawati, S.Si., M.Sc.<br>
+              Alfiatun Nur Khasanah, S.Si., M.Sc.
+            </ion-text>
+          </ion-card-content>
+        </ion-card>
+
+      </div>
+    </ion-accordion>
+
+  </ion-accordion-group>
 </ion-content>

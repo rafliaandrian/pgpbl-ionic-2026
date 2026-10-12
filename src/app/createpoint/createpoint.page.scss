@@ -1,0 +1,102 @@
+ion-content {
+  --padding-top: 0;
+  --padding-bottom: 0;
+  --padding-start: 0;
+  --padding-end: 0;
+}
+
+#mapcreate {
+  width: 100%;
+  height: 500px;
+  margin-top: 10px;
+}
+
+ion-content {
+  --background: #080d16;
+  --padding-top: 20px;
+  --padding-bottom: 24px;
+  --padding-start: 20px;
+  --padding-end: 20px;
+}
+
+/* HEADER */
+ion-header {
+  ion-toolbar {
+    --background: #080d16;
+    --color: #ffffff;
+    --border-width: 0;
+  }
+
+  ion-title {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+  }
+
+  ion-back-button {
+    --color: #ffffff;
+  }
+}
+
+/* FORM */
+ion-item {
+  --background: #111a28;
+  --color: #ffffff;
+  --padding-start: 16px;
+  --padding-end: 16px;
+  --inner-padding-end: 0;
+
+  margin-bottom: 14px;
+
+  border: 1px solid #1e2c42;
+  border-radius: 14px;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+ion-label {
+  --color: #8d9bb0 !important;
+  font-size: 13px !important;
+}
+
+ion-input,
+ion-textarea {
+  --color: #ffffff;
+  --placeholder-color: #65748a;
+
+  font-size: 14px;
+}
+
+/* SAVE BUTTON */
+ion-button {
+  --background: #1677ff;
+  --background-hover: #0868e8;
+  --background-activated: #075dcc;
+  --color: #ffffff;
+
+  --border-radius: 14px;
+
+  height: 50px;
+  margin: 20px 0 18px;
+
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+
+  box-shadow: 0 8px 22px rgba(22, 119, 255, 0.25);
+}
+
+/* MAP */
+#mapcreate {
+  width: 100%;
+  height: 400px;
+
+  margin-top: 8px;
+
+  border-radius: 18px;
+  overflow: hidden;
+
+  border: 1px solid #1e2c42;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
